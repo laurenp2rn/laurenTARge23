@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliptical Shapes</title>
+    <style>
+        p{
+            border: 5px solid #ee3e80;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 20px;
+        }
+        p.one {
+            border-top-left-radius: 80px 50px;
+            -moz-border-radius-top-left: 80px 50px;
+            box-shadow: -5px -5px #777777;
+        }
+        p.two {
+            border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+            border-color: #bbbbaa #111111 #ee3e80;
+            box-shadow: 5px 5px 5px #777777;
+        }
+        p.three {
+            padding: 0px;
+            border-radius: 100px;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0% blue);
+            box-shadow: 0 0 10px #777777;
+        }
+        p.four { 
+            border-image: url("images/dots.gif") 11 11 11 11 stretch;
+        }
+        p.five {
+            border-image: url("images/dots.gif") 11 11 11 11 round;
+        }
+        div.six {
+            overflow: hidden;
+        }
+        div.seven {
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <p class="one"></p>
+    <p class="two"></p>
+    <p class="three"></p>
+    <p class="four">Asd</p>
+    <p class="five">Asd</p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea et quia harum. 
+        Voluptate nulla ut inventore ducimus neque. Illum a quidem minima sapiente, 
+        aut accusamus culpa maiores provident sit quis?
+    </p>
+    <div class="seven">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Consectetur non assumenda adipisci illo perspiciatis eos earum aspernatur excepturi vero,
+         veniam deleniti iusto quibusdam in, veritatis officia suscipit numquam et maxime!
+    </div>
+</body>
+</html>
